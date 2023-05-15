@@ -72,7 +72,11 @@ hr{
     margin-left: 5%;
 }
 
-.dropdown-content a:hover{background-color: #000;}
+.dropdown-content a:hover{
+    background-color: #000;
+    letter-spacing: 3px;
+    transition: 2s;
+}
 .dropdown:hover .dropdown-content{display: block;}
 
 
@@ -164,7 +168,7 @@ hr{
    font-family: 'Playfair Display', serif;
    font-size: 30px;
    padding: 2%;
-   
+
 }
 .tekstogknap button{
     display: flex;
@@ -296,6 +300,9 @@ hr{
     }
     .tekstundertitel{
         font-size: 15px;
+    }
+    .titel{
+        font-size: 35px;
     }
 }
 
