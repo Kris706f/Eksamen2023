@@ -88,7 +88,7 @@ hr{
 .underside{
     background-color: #9DC08B;
 
-    padding-bottom: 20%;
+    padding-bottom: 15%;
 }
 .logo{
     position: relative;
@@ -162,6 +162,7 @@ hr{
 }
 .tekstogknap{
     background-color: #EDF1D6;
+    padding-bottom: 2%;
 }
 .tekstogknap h3{
    text-align: center;
@@ -170,19 +171,23 @@ hr{
    padding: 2%;
 
 }
-.tekstogknap button{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
 
+
+.tekstogknap a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 2%;
+    font-size: 20px;
     font-family: 'Playfair Display', serif;
     font-weight: 900;
-    font-size: 15px;
-    padding: 2%;
-}
-.tekstogknap a{
-    text-decoration: none;
-    padding: 3%;
+    color: #000;
+
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .venstrekort{
     background-color: #40513B;
@@ -196,14 +201,80 @@ hr{
     background-color: #40513B;
     margin-bottom: 5%;
 }
+.collapsible {
+    background-color: #609966;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 25%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    border-radius: 20px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #40513B;
+  }
+  
+  .content{
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  .content p{
+    font-family:'Playfair Display', serif;
+  }
+/*------------------------Her er CSS til INFO side med brødtekst---------------------------*/
 
+.tekstfelt{
+    display:flex;
+    align-items:center;
+    padding: 2%;
+}
+.tekstfelt p{
+    padding-bottom: 2%;
+    font-family:'Playfair Display', serif;
+    font-weight: 100;
+}
+.tekstfelt h2{
+    font-family:'Playfair Display', serif;
+}
+.tekstfelt img{
+    width:100%;
+    border-radius:10px;
+}
+.brødtekst{
+    padding: 2%;
+    width: 60%;
+}
 
-
-
+.brødtekst a{ /* Knappen til at købe abonnement */
+    background-color:#609966;
+    border-radius:20px;
+    color:white;
+    padding:10px;
+    text-decoration:none;
+}
+.brødtekst a:hover{
+    background-color: #000;
+}
+.linje{
+    border-left: 3px solid #000;
+    height: 450px;
+    padding-left: 1%;
+}
+.linjeto{
+    border-left: 3px solid #000;
+    height: 450px;
+    margin-left: 1%; 
+}
 
 
 /*------------------------ANIMATION---------------------------*/
-
+/*
 @keyframes fadeslideto{
     from{opacity: 0;}
     to{opacity: 1;}
@@ -227,7 +298,7 @@ hr{
     to{opacity: 1;}
 }
 
-
+*/
 
 
 
@@ -283,6 +354,9 @@ hr{
 .kortknap:hover{
     background-color: rgb(38, 39, 44);
     color: #fff;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 50%;
     transition: 1s;
 }
@@ -304,12 +378,35 @@ hr{
     .titel{
         font-size: 35px;
     }
+    .tekstfelt{
+        display: block;
+    }
+    .linje{
+        display: none;
+    }
+    .linjeto{
+        display: none;
+    }
+    .billede{
+        display: none;
+    }
+    .collapsible{
+        font-size: 12px;
+        width: 50%;
+    }
+    .brødtekst{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
 /*--LAPTOP LAYOUT--*/
 @media screen and (min-width:874px){
-
+    .billedemobil{
+        display: none;
+    }
 }
 
 
