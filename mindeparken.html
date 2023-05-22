@@ -41,58 +41,148 @@
             <h1>Mindeparken</h1>
         </div>
         <div class="tekstundertitel">
-            <h4>Nyd udsigten ud til stranden <br> og oplev dansk historie</h4>
+            <h4>Nyd udsigten<br> og oplev dansk historie</h4>
         </div>
     </section>
     <section class="underside">
-        <div class="logotop">
-            <h3>Mindeparken</h3>
-            <p>Tekst tekst tekst Tekst tekst tekstTekst tekst tekstTekst tekst tekst   </p>
+        <div class="tekstfelt">
+            <section class="billedemobil">
+                <img src="images/testbillede.jpeg" alt="">
+            </section>
+            <section class="brødtekst">
+                <div><!--Den her div skal bruges til at være i midten af section'en.-->
+                    <h2>Historie</h2>
+                    <p>Mindeparken blev officielt indviet i 1925 under overværelse af 
+                        kongeparret. Samme år blev der udskrevet en offentlig skitsekonkurrence 
+                        for et monument, der skulle minde de faldne danskere i 1. verdenskrig. 
+                        Valget faldt på billedhugger Axel Poulsen og arkitekt Axel Ekbergs projekt. 
+                        Indvielsen i 1934 blev overværet af intet mindre end 50.000 deltagere.</p>
+                    <button type="button" class="collapsible">Læs Mere</button>
+                    <div class="content">
+                        <p><b>En royal park</b></p>
+                        <p>I starten af 1900-tallet havde Aarhus 
+                            Byråd planer om at udstykke de grønne 
+                            arealer foran Marselisborg Slot til villagrunde. 
+                            Men kort tid efter at Christian 10. som kronprins 
+                            havde fået overdraget slottet i 1902 fik han 
+                            godkendt af byrådet, at de 30 tønder land foran 
+                            slottet ikke skulle bebygges for at bibeholde 
+                            havudsigten fra slottet.</p>
+                        <p><b>Lyserød gave fra Japan</b></p>
+                        <p>I Mindeparken blomstrer lyserøde kirsebærtræer 
+                            hvert forår. I 1988 forærede den japanske 
+                            Sakura Fond 300 japanske kirsebærtræer 
+                            til Aarhus. Formålet var at oprette en skov 
+                            af kirsebærtræer, og fire år efter blev cirka 
+                            halvdelen af træerne sat i jorden i området 
+                            mellem Mindeparken og Frederikshøj.</p>
+                      </div>
+                </div>
+            </section>
+            <div class="linje"></div>
+            <!-- Jeg har valgt at lægge billedet i en section for at få simplere kode med flexbox i CSS: -->
+            <section class="billede">
+                <img src="images/testbillede.jpeg" alt="">
+            </section>
         </div>
 
-      
- 
-    <div class="kortholder">
-        <div data-aos="fade-up" data-aos-duration="2000" class="venstrekort">
-            <a href="dyrehaven.html"><img src="images/testbillede.jpg" alt=""></a>
-            <div class="tekstogknap">
-                <h3>Aktiviteter</h3>
-                <hr>
-                <a class="kortknap" href="#">Læs mere</a>
-            </div>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="2000" class="midtkort">
-            <img src="images/testbillede.jpg" alt="">
-            <div class="tekstogknap">
-                <h3>Historie</h3>
-                <hr>
-                <a class="kortknap" href="#">Læs mere</a>
-            </div>
-        </div>
-        <div data-aos="fade-up" data-aos-duration="2000" class="højrekort">
-            <img src="images/testbillede.jpg" alt="">
-            <div class="tekstogknap">
-                <h3>Events</h3>
-                <hr>
-                <a class="kortknap" href="#">Læs mere</a>
-            </div>
-        </div>
-    </div>
     </section>
-    <!--Dette er til min scroll down animationer-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-	  AOS.init();
-	</script>
-    <!--Her stopper mine ting til scroll down animationer-->
+    <section class="forside">
+        <div class="tekstfelt">
+             <!-- Jeg har valgt at lægge billedet i en section for at få simplere kode med flexbox i CSS: -->
+            <section class="billede">
+                <img src="images/testbillede.jpeg" alt="">
+            </section>
+            <section class="billedemobil">
+                <img src="images/testbillede.jpeg" alt="">
+            </section>
+            <div class="linjeto"></div>
+            <section class="brødtekst">
+                <div><!--Den her div skal bruges til at være i midten af section'en.-->
+                    <h2>Aktiviteter</h2>
+                    <p>I Mindeparkens vestlige hjørne tæt ved rundkørslen 
+                        og Marselisborg Slot ligger en stor offentlig legeplads 
+                        med klatre- og gyngestativer, rutchebaner og legetårne.</p>
+                    <p>Du kan også finde udendørs trænings udstyr. Hvor du kan nyde naturen
+                        imens du bruger de udendørs trænings faciliteter som står i mindeparken</p>
+                    <button type="button" class="collapsible">Læs Mere</button>
+                    <div class="content">
+                        <p><b>Legepladsen</b></p>
+                        <p>Legepladsen henvender sig primært til børn mellem 1-12 år.</p>
+                        <p>En gangbro snor sig igennem legepladsen, der desuden 
+                            har et underlag lavet af blødt gummi. Ved siden af 
+                            legepladsen er der et stort udendørs fitnessområde, 
+                            og det store grønne område er oplagt til boldspil. 
+                            Der er toiletter i parken samt en kiosk, der bl.a. sælger 
+                            is og kaffe.</p>
+                        <p><b>Fitness Pladsen</b></p>
+                        <p>Fitnesspladsen ligger i den vestlige ende af 
+                            Mindeparken tæt ved Kongevejen. Det er muligt 
+                            at træne alle muskelgrupper, og fitnesspladsen 
+                            kan bruges af alle uanset niveau.</p>
+                    </div>
+                </div>
+            </section>
+    </section>
+    <section class="underside">
+        <div class="tekstfelt">
+            <section class="billedemobil">
+                <img src="images/testbillede.jpeg" alt="">
+            </section>
+            <section class="brødtekst">
+                <div><!--Den her div skal bruges til at være i midten af section'en.-->
+                    <h2>Events</h2>
+                    <p>Mindeparken blive også brugt til en masse forskellige events.
+                        Det kan f.eks. være DHL løbet eller løbet for Knæk Cancer. Dette er bare
+                        to af de events der finder sted i mindeparken.
+                    </p>
+                    <button type="button" class="collapsible">Læs Mere</button>
+                    <div class="content">
+                        <p><b>Løb for knæk cancer</b></p>
+                        <p>Kom og vær med til Løb for Knæk Cancer 2023 
+                            lørdag den 28. oktober som opvarmning til 
+                            det store Knæk Cancer Show. Du kan deltage 
+                            som løber eller walker i Mindeparken i Aarhus, 
+                            og via dit deltagergebyr støtter du Knæk Cancer 
+                            indsamlingen.</p>
+                        <p>På selve dagen for det store indsamlingsshow på TV2 har du mulighed for at mødes med familien, venner eller kollegaer til en løbe- eller gåtur i Mindeparken.
+                            Vi sørger for rammerne til en hyggelig formiddag, så du kan nyde fællesskabet og støtte op om et godt formål. Du kan vælge at løbe eller gå en af ruterne på enten 4 eller 7 km.
+                            Vi sørger for en goodiebag, vand, kaffe og frugt og ikke mindst en Løb for Knæk Cancer 2023 medalje til jer i mål.</p>
+                        <p><b>DHL Løbet</b></p>
+                        <p>Kom og vær med, når vi forvandler Mindeparken i 
+                            Aarhus til en kæmpe folkefest, hvor 45.000 motionister 
+                            henover 3 dage begiver sig ud på et 5x5 km stafetløb 
+                            eller en 5 km walk. I 2023 er det 41. gang, at 
+                            DHL Stafetten afholdes. Mere end 1000 offentlige og 
+                            private virksomheder benytter lejligheden til at mødes til en 
+                            venskabelig dyst og derfor har stafetten fået tilnavnet 
+                            ”verdens største firmafest”.</p>
+                        <p>DHL Stafetten er en oplagt mulighed for et 
+                            firmaarrangement, hvor man mødes i hyggelige rammer 
+                            til enten en løbe- eller gåtur. I mange virksomheder er 
+                            DHL Stafetten blevet en del af deres dna og en begivenhed, 
+                            der snakkes om på kontoret og over frokosten både inden og 
+                            efter selve arrangementet.</p>
+                      </div>
+                </div>
+            </section>
+            <div class="linje"></div>
+            <!-- Jeg har valgt at lægge billedet i en section for at få simplere kode med flexbox i CSS: -->
+            <section class="billede">
+                <img src="images/testbillede.jpeg" alt="">
+            </section>
+        </div>
+
+    </section>
 </body>
 <footer class="marselisborgfooter">
     <div class="footertekst">
         <a href="index.html">Marselisborg</a>
         <hr>
-        <p class="pfooter">
-            Marselisborg - Marselisborg -Marselisborg - Marselisborg -Marselisborg - Marselisborg -Marselisborg - Marselisborg -
-        </p>
+        <p class="pfooter">Marselisborg-området i Aarhus er en fantastisk destination, 
+            der kombinerer naturlig skønhed, historie, kultur og rekreation. 
+            Det tilbyder noget for enhver smag og er et perfekt sted at tilbringe 
+            tid i naturen.</p>
 
     </div>
     <div class="footerikon">
@@ -111,6 +201,20 @@
     </div>
 
 </footer>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
 </html>
-
-

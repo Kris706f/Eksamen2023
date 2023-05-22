@@ -88,7 +88,7 @@ hr{
 .underside{
     background-color: #9DC08B;
 
-    padding-bottom: 15%;
+    padding-bottom: 5%;
 }
 .logo{
     position: relative;
@@ -129,7 +129,7 @@ hr{
     position: relative;
     top: 40%;
     text-align: center;
-
+    letter-spacing: 5px;
     font-family: 'Shrikhand', cursive;
     color: #9DC08B;
     font-size: 50px;
@@ -147,7 +147,25 @@ hr{
     padding-bottom: 350px;
     animation: fadeslideto 2s;
 }
-
+/*--------Herunder laver jeg css til "find vej" siden-------------------*/
+.findvejkort{
+    width: 30%;
+}
+.iframe{
+    width: 100%;
+    height: 300px;
+    background-color: #dc143c;
+}
+iframe{
+    width: 100%;
+}
+#findvejholder{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tekstlokation{
+    text-align: center;
+}
 
 /*------------------------Herunder laver jeg CSS til mine Kort---------------------------*/
 .kortholder{
@@ -202,7 +220,7 @@ hr{
     margin-bottom: 5%;
 }
 .collapsible {
-    background-color: #609966;
+    background-color: #dc143c;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -251,7 +269,7 @@ hr{
     width: 60%;
 }
 
-.brødtekst a{ /* Knappen til at købe abonnement */
+.brødtekst a{ /* Knappen */
     background-color:#609966;
     border-radius:20px;
     color:white;
@@ -259,7 +277,7 @@ hr{
     text-decoration:none;
 }
 .brødtekst a:hover{
-    background-color: #000;
+    background-color: #dc143c;
 }
 .linje{
     border-left: 3px solid #000;
@@ -300,8 +318,63 @@ hr{
 
 */
 
-
-
+/*------Herunder er CSS til min kontakt side----------------*/
+#kontakthoved{
+    padding-top: 3%;
+    width: 100%;
+    background-image: url(images/himmel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#kontakthoved h2{
+    font-size: 50px;
+    padding-top: 10%;
+    padding-bottom: 13%;
+    text-align: center;
+}
+#kontaktbund{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.boksbund{
+    width: 34%;
+    background-color: #40513B;
+}
+.boksbund iframe{
+    width: 100%;
+    height: 100%;
+}
+.boksbundmidt{
+    width: 32%;
+    background-color: #9DC08B;
+}
+.boksbundmidt h2{
+    padding-top: 12%;
+    padding-left: 15%;
+    font-size: 35px;
+    color: #fff;
+}
+.boksbundmidt p{
+    padding-top: 5%;
+    padding-left: 15%;
+    font-size: 15px;
+    color: #fff;
+}
+.boksbund h2{
+    padding-top: 12%;
+    padding-left: 15%;
+    font-size: 35px;
+    color: #fff;
+}
+.boksbund p{
+    padding-top: 2%;
+    padding-left: 15%;
+    font-size: 15px;
+    color: #fff;
+    line-height: 20px;
+    padding-bottom: 35%;
+}
 
 /*------------------------Footer---------------------------*/
 
@@ -352,12 +425,12 @@ hr{
 /*------------------------Hover Effects til Knapper er herunder---------------------------*/
 
 .kortknap:hover{
-    background-color: rgb(38, 39, 44);
+    background-color: #dc143c;
     color: #fff;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
+    border-radius: 25px;
     transition: 1s;
 }
 
@@ -376,7 +449,7 @@ hr{
         font-size: 15px;
     }
     .titel{
-        font-size: 35px;
+        font-size: 30px;
     }
     .tekstfelt{
         display: block;
@@ -399,6 +472,28 @@ hr{
         margin-left: auto;
         margin-right: auto;
     }
+    #kontaktbund{
+        display: block;
+    }
+    .boksbund{
+        display: none;
+    }
+    .boksbundmidt{
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    #kontakthoved h2{
+        padding-top: 50%;
+        padding-bottom: 40%;
+    }
+    #findvejholder{
+        display: block;
+    }
+    .findvejkort{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -408,6 +503,8 @@ hr{
         display: none;
     }
 }
+
+
 
 
 

@@ -40,22 +40,34 @@
             <h1>Sika Hjort</h1>
         </div>
         <div class="tekstundertitel">
-            <h4>Tekst tekst tekst tekst</h4>
+            <h4>Sika hjort, også kendt som sikahjort, er en mellemstor hjorteart, der oprindeligt stammer fra Østasien</h4>
         </div>
     </section>
     <section class="underside">
         <div class="tekstfelt">
+            <section class="billedemobil">
+                <img src="images/testbillede.jpeg" alt="">
+            </section>
             <section class="brødtekst">
                 <div><!--Den her div skal bruges til at være i midten af section'en.-->
-                    <h2>En østasiatisk hjorteart</h2>
-                    <p>Sikaen er en østasiatisk art, der blev indført i Danmark i 1900 – tallet, og er altså ikke en naturlig dansk hjorteart. Den blev indført af mennesket til jagt og til at pynte i de danske parker, godser og dyrehaver. Sikaens føde består især af græs og urter, men spiser også olden, svampe, bregner og træernes friske skud, knopper og bark.</p>
-                    <a href="">Læs Mere &#x2192;</a>
+                    <h2>En Østasiatisk Hjorteart</h2>
+                    <p>Sikaen er en østasiatisk art, der blev indført i Danmark i 
+                        1900 – tallet, og er altså ikke en naturlig dansk hjorteart. 
+                        Den blev indført af mennesket til jagt og til at pynte i de 
+                        danske parker, godser og dyrehaver. Sikaens føde består især af 
+                        græs og urter, men spiser også olden, svampe, bregner og træernes 
+                        friske skud, knopper og bark.</p>
+                    <button type="button" class="collapsible">Læs Mere</button>
+                    <div class="content">
+                        <p>Sika hjorte varierer i størrelse alt efter underarten og kan veje mellem 30 og 70 kilogram. Hannerne, også kendt som bukke, har normalt større kroppe og gevirer sammenlignet med hunnerne, der kaldes hinder. Sika hjorte er kendt for deres flotte gevirs opsats, der har grene, der spreder sig i en karakteristisk form.</p>
+                        <p>Pelsen på sika hjorte varierer også afhængigt af underarten. Farven kan være brunlig, sort eller rødbrun, og nogle underarter har også hvide pletter på ryggen og flankerne. Denne farvevariation hjælper dem med at camouflere sig i deres naturlige omgivelser.</p>
+                      </div>
                 </div>
             </section>
             <div class="linje"></div>
             <!-- Jeg har valgt at lægge billedet i en section for at få simplere kode med flexbox i CSS: -->
             <section class="billede">
-                <img src="images/testbillede.jpeg" alt="Fodboldspillere fra AGF">
+                <img src="images/testbillede.jpeg" alt="">
             </section>
         </div>
 
@@ -64,15 +76,22 @@
         <div class="tekstfelt">
              <!-- Jeg har valgt at lægge billedet i en section for at få simplere kode med flexbox i CSS: -->
             <section class="billede">
-                <img src="images/testbillede.jpeg" alt="Fodboldspillere fra AGF">
+                <img src="images/testbillede.jpeg" alt="">
+            </section>
+            <section class="billedemobil">
+                <img src="images/testbillede.jpeg" alt="">
             </section>
             <div class="linjeto"></div>
             <section class="brødtekst">
                 <div><!--Den her div skal bruges til at være i midten af section'en.-->
-                    <h2>Stænger med takker på</h2>
+                    <h2>Stænger Med Takker På</h2>
                     <p>Sikahjortens gevir består af runde stænger med takker på. I fagsproget kalder man disse takker for sprosser eller ender. Når man taler om sikahjortens gevir, taler man om fireender, seksender eller otteender (halvdelen på hver stang). En etårig hjort har, som alle andre hjorte, kun to ugrenede spidser, og kaldes derfor en spidshjort.</p>
                     <p>Almindeligvis har hjorten allerede som to- eller treårig fire ender på hver stang, og får, uanset hvor gammel den bliver, sjældent flere. Geviret bliver dog højere, bredere og tungere med alderen, indtil hjorten er otte til ti år gammel.</p>
-                    <a href="">Læs Mere &#x2192;</a>
+                    <button type="button" class="collapsible">Læs Mere</button>
+                    <div class="content">
+                        <p>Sika hjorte er tilpasset til forskellige levesteder og kan findes i skove, vådområder og bjergområder. De er også dygtige svømmere og kan trives i nærheden af vandløb og søer. Sika hjorte er planteædere og lever hovedsageligt af græs, blade, skud og bark. De kan også æde landbrugsafgrøder, hvilket kan give dem en udfordret relation til menneskelig beboelse.</p>
+                        <p>Under parringssæsonen, der normalt forekommer om efteråret, udfører bukkene imponerende adfærd for at tiltrække hunnerne. Dette inkluderer brølen, fløjten og baskning med deres gevirs opsats. Efter parringen føder hunnen normalt en enkelt kalv, der har en plettet pels, der hjælper med at camouflere den i omgivelserne.</p>
+                    </div>
                 </div>
             </section>
     </section>
@@ -81,9 +100,10 @@
     <div class="footertekst">
         <a href="index.html">Marselisborg</a>
         <hr>
-        <p class="pfooter">
-            Marselisborg - Marselisborg -Marselisborg - Marselisborg -Marselisborg - Marselisborg -Marselisborg - Marselisborg -
-        </p>
+        <p class="pfooter">Marselisborg-området i Aarhus er en fantastisk destination, 
+            der kombinerer naturlig skønhed, historie, kultur og rekreation. 
+            Det tilbyder noget for enhver smag og er et perfekt sted at tilbringe 
+            tid i naturen.</p>
 
     </div>
     <div class="footerikon">
@@ -102,4 +122,20 @@
     </div>
 
 </footer>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
 </html>
