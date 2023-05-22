@@ -412,6 +412,7 @@ iframe{
 .footerikon{
     display: flex;
     justify-content: space-evenly;
+    background-color: blue;
     
 }
 .enkeltikon img{
@@ -419,6 +420,7 @@ iframe{
     width: 30%;
     margin-left: auto;
     margin-right: auto;
+    background-color: red;
 }
 
 
