@@ -8,7 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 /*--Shrikhand Font--*/
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+/*--Racing Sans One--*/
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 
 
 .topheader{
@@ -116,13 +117,13 @@ hr{
     animation: fadeslideet 2s;
 }
 .logotop p{
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Playfair Display', serif;
     color: #EDF1D6;
- 
     text-align: center;
     font-size: 20px;
     padding-left: 5%;
     padding-right: 5%;
+    font-weight: 900;
 
 }
 .titel{
@@ -130,11 +131,11 @@ hr{
     top: 40%;
     text-align: center;
     letter-spacing: 5px;
-    font-family: 'Shrikhand', cursive;
     color: #9DC08B;
     font-size: 50px;
     padding-top: 190px;
     animation: fadeslideet 2s;
+    font-family: 'Playfair Display', serif;
 
 }
 .tekstundertitel{
@@ -142,10 +143,10 @@ hr{
     top: 40%;
     text-align: center;
     font-size: 25px;
-    font-family: 'Shrikhand', cursive;
     color: #40513B;
     padding-bottom: 350px;
     animation: fadeslideto 2s;
+    font-family: 'Playfair Display', serif;
 }
 /*--------Herunder laver jeg css til "find vej" siden-------------------*/
 .findvejkort{
@@ -412,7 +413,6 @@ iframe{
 .footerikon{
     display: flex;
     justify-content: space-evenly;
-    background-color: blue;
     
 }
 .enkeltikon img{
@@ -420,7 +420,6 @@ iframe{
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
 }
 
 
