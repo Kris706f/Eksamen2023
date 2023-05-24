@@ -6,11 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 /*--Cinzel Font--*/
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-/*--Shrikhand Font--*/
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-/*--Racing Sans One--*/
-@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
-
 
 .topheader{
     background-color: #609966;
@@ -84,7 +79,11 @@ hr{
 /*-------------------Forsiden---------------------*/
 .forside{
     background-color: #EDF1D6;
-
+}
+.forsidebillede{
+    background-image: url(images/hvidblad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .underside{
     background-color: #9DC08B;
@@ -148,6 +147,46 @@ hr{
     animation: fadeslideto 2s;
     font-family: 'Playfair Display', serif;
 }
+
+
+
+.logofront{
+    position: relative;
+    top: 10%;
+    text-align: center;
+
+    font-family:'Cinzel', serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 60px;
+    animation: slidetop 2s;
+}
+.titelfront{
+    position: relative;
+    top: 40%;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 240px;
+    animation: fadeslideet 2s;
+    font-family: 'Playfair Display', serif;
+
+}
+.tekstundertitelfront{
+    position: relative;
+    top: 40%;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 350px;
+    animation: fadeslideto 2s;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
 /*--------Herunder laver jeg css til "find vej" siden-------------------*/
 .findvejkort{
     width: 30%;
@@ -323,15 +362,17 @@ iframe{
 #kontakthoved{
     padding-top: 3%;
     width: 100%;
-    background-image: url(images/himmel.jpg);
+    background-image: url(images/hul.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #kontakthoved h2{
     font-size: 50px;
-    padding-top: 10%;
+    padding-top: 15%;
     padding-bottom: 13%;
     text-align: center;
+    color: #40513B;
+    text-transform: uppercase;
 }
 #kontaktbund{
     display: flex;
@@ -495,6 +536,13 @@ iframe{
         margin-left: auto;
         margin-right: auto;
     }
+    #kontakthoved{
+        width: 100%;
+    }
+    #kontakthoved h2{
+        color: #fff;
+    }
+
 }
 
 
